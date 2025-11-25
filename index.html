@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Game Seru - Landing Page</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(180deg,#0c1023,#000);
+        color: white;
+    }
+
+    header {
+        text-align: center;
+        padding: 30px 0;
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        background: #111730;
+        box-shadow: 0 0 20px #000;
+    }
+
+    .sub {
+        text-align: center;
+        margin-top: 10px;
+        color: #ccc;
+        font-size: 18px;
+    }
+
+    .game-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+        gap: 25px;
+        padding: 40px;
+    }
+
+    .game-card {
+        background: #161d3d;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        transition: .3s;
+        cursor: pointer;
+        box-shadow: 0 0 15px #000;
+    }
+
+    .game-card:hover {
+        transform: scale(1.05);
+        background: #1f2859;
+    }
+
+    .game-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .game-card h3 {
+        margin-top: 15px;
+        font-size: 22px;
+    }
+
+    .game-card button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: #2a3ba3;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .game-card button:hover {
+        background: #3d56e3;
+    }
+</style>
+</head>
+<body>
+
+<header>🎮 GAME SERU PILIHAN</header>
+<div class="sub">Pilih game favoritmu dan mulai bermain!</div>
+
+<div class="game-container">
+
+    <!-- GAME 1 -->
+    <div class="game-card" onclick="go('spaceman.html')">
+        <img src="https://i.imgur.com/a5Xzh9V.jpeg">
+        <h3>🚀 Spaceman</h3>
+        <button>Mainkan</button>
+    </div>
+
+    <!-- GAME 2 -->
+    <div class="game-card" onclick="go('slot-fake.html')">
+        <img src="https://i.imgur.com/n8U1z4M.jpeg">
+        <h3>🎰 Slot Fake</h3>
+        <button>Mainkan</button>
+    </div>
+
+    <!-- GAME 3 -->
+    <div class="game-card" onclick="go('quiz.html')">
+        <img src="https://i.imgur.com/3rjXJtP.jpeg">
+        <h3>🧠 Quiz Seru</h3>
+        <button>Mainkan</button>
+    </div>
+
+    <!-- GAME 4 -->
+    <div class="game-card" onclick="go('tebak-angka.html')">
+        <img src="https://i.imgur.com/ghX3CfR.jpeg">
+        <h3>🔢 Tebak Angka</h3>
+        <button>Mainkan</button>
+    </div>
+
+    <!-- GAME 5 -->
+    <div class="game-card" onclick="go('tembak-balon.html')">
+        <img src="https://i.imgur.com/T8DTZBD.jpeg">
+        <h3>🎈 Tembak Balon</h3>
+        <button>Mainkan</button>
+    </div>
+
+    <!-- GAME 6 -->
+    <div class="game-card" onclick="go('mobil-balap.html')">
+        <img src="https://i.imgur.com/aQ2mK5R.jpeg">
+        <h3>🏎️ Balap Mobil</h3>
+        <button>Mainkan</button>
+    </div>
+
+    <!-- GAME 7 -->
+    <div class="game-card" onclick="go('flappy.html')">
+        <img src="https://i.imgur.com/dXYBEMn.jpeg">
+        <h3>🐦 Flappy Bird Clone</h3>
+        <button>Mainkan</button>
+    </div>
+
+    <!-- GAME 8 -->
+    <div class="game-card" onclick="go('pong.html')">
+        <img src="https://i.imgur.com/AgFQOUu.jpeg">
+        <h3>🏓 Pong</h3>
+        <button>Mainkan</button>
+    </div>
+
+</div>
+
+<script>
+function go(page) {
+    alert("Membuka: " + page + "\n(Isi dengan file game Anda)");
+    // Gunakan ini jika sudah ada filenya:
+    // window.location.href = page;
+}
+</script>
+
+</body>
+</html>
